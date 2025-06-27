@@ -1,159 +1,144 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eitan & Meir GmbH</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: #1a1a1a;
       background-color: #ffffff;
-      line-height: 1.6;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
     }
     header {
-      background: linear-gradient(135deg, #0d1a2b, #1f3c5d);
-      color: white;
-      padding: 4rem 2rem 3rem;
-      text-align: center;
-      position: relative;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 1rem;
+    }
+    .header-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
     }
     .logo {
       font-family: 'Times New Roman', serif;
-      font-size: 3.2rem;
-      margin: 0;
-      letter-spacing: 0.5px;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
     }
-    header p {
-      font-size: 1.25rem;
-      margin-top: 0.75rem;
-      color: #dbe9ff;
+    .tagline {
+      font-size: 12px;
+    color: #666;
+    margin-top: -19px;
+    letter-spacing: 1.25px;
+    margin-left: 2px;
     }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: auto;
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
     }
     h2 {
-      font-size: 2rem;
-      margin-top: 0;
-      color: #0d1a2b;
+      font-size: 24px;
       margin-bottom: 1rem;
+      color: #111;
+      letter-spacing: -0.2px;
     }
     p, li {
-      font-size: 1.05rem;
+      font-size: 1rem; 
     }
-    .services, .contact, .impressum, .privacy {
-      background-color: #f8fafc;
-      border-radius: 12px;
-      padding: 2.5rem;
-      margin-top: 3rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      transition: box-shadow 0.3s ease;
+    ul {
+      padding-left: 1.25rem;
+      margin-bottom: 2rem;
     }
-    .services:hover, .contact:hover, .impressum:hover, .privacy:hover {
-      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-    }
-    .services ul {
-      padding-left: 1.5rem;
+    section {
+      margin-bottom: 4rem;
     }
     footer {
-      background-color: #0d1a2b;
-      color: white;
+      background-color: #f9f9f9;
+      color: #444;
+      border-top: 1px solid #e0e0e0;
+      padding: 2rem 1.5rem;
+      font-size: 0.9rem;
+    }
+    .footer-inner {
+      max-width: 900px;
+      margin: 0 auto;
       text-align: center;
-      padding: 2rem;
-      font-size: 0.95rem;
-      margin-top: 4rem;
     }
     a {
-      color: #0d6efd;
+      color: #1a1a1a;
       text-decoration: none;
-      font-weight: 500;
+      transition: color 0.2s ease, opacity 0.2s ease;
     }
     a:hover {
-      text-decoration: underline;
+      color: #000;
+      opacity: 0.8;
     }
-    #cookie-banner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #1f2937;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.95rem;
-      z-index: 999;
-    }
-    #cookie-banner button {
-      background: #0d6efd;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+  html {
+  margin: 0;
+  padding: 0;
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1 class="logo">Eitan & Meir</h1>
-    <p>Innovation in Elektronik, Design & Welthandel</p>
+  <div style="position: absolute; top: 0.5rem; right: 1.5rem; font-size: 0.85rem;">
+    <a href="index.html" style="margin-right: 0.75rem; color: #1a1a1a;">EN</a>
+    <a href="index-de.html" style="color: #1a1a1a;">DE</a>
+  </div>
+  <header style="margin-top: 0; padding-top: 0;">
+    <div class="header-container">
+      <h1 class="logo" style="margin-top: 0; color: #444;padding-top: 15px;">EITAN & MEIR</h1>
+      <p class="tagline">Innovation Across Electronics, Design & Global Trade</p>
+    </div>
   </header>
 
-  <section>
-    <h2>Über Uns</h2>
-    <p>
-      Die Eitan & Meir GmbH mit Sitz in Berlin entwickelt, produziert und vertreibt innovative Lösungen in verschiedenen Branchen – darunter Bildungselektronik, Kosmetik, Schmuck und IT-Dienstleistungen. Unser Fokus liegt auf Qualität, Nachhaltigkeit und Kundenzufriedenheit.
-    </p>
+  <main>
+    <section>
+      <h2>Über Uns</h2>
+      <p>
+        Eitan & Meir GmbH ist ein Berliner Unternehmen, das sich auf die Entwicklung, Herstellung und den Vertrieb innovativer Lösungen in den Bereichen Bildungselektronik, Kosmetik, Schmuck und IT-Dienstleistungen konzentriert. Wir legen Wert auf Qualität, Nachhaltigkeit und benutzerfreundliches Design.
+      </p>
+    </section>
 
-    <div class="services">
-      <h2>Unsere Leistungen</h2>
+    <section>
+      <h2>Unsere Dienstleistungen</h2>
       <ul>
-        <li>Modulare Elektronikbausätze für Bildung (Circubes)</li>
-        <li>Entwicklung von Düften und Kosmetikprodukten</li>
-        <li>Handel mit Schmuck und Lifestyle-Produkten</li>
-        <li>Import- und Exportdienstleistungen</li>
+        <li>Modulare Elektronik-Bausätze für die Bildung (Circubes)</li>
+        <li>Duft- und Kosmetikproduktentwicklung</li>
+        <li>Schmuck- und Lifestyle-Produkthandel</li>
+        <li>Import- & Exportdienstleistungen</li>
         <li>IT-Beratung & Softwareentwicklung</li>
-        <li>Online- & Einzelhandelsvertrieb</li>
+        <li>Online- & Einzelhandelsgeschäft</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="contact">
+    <section>
       <h2>Kontakt</h2>
-      <p>E-Mail: <a href="mailto:contact@eitan-meir.de">contact@eitan-meir.de</a></p>
+      <p>E-Mail: <a href="mailto:info@eitan-meir.de">info@eitan-meir.de</a></p>
       <p>Adresse: Marienfelder Allee 195f, 12279 Berlin, Deutschland</p>
-    </div>
+    </section>
 
-    <div class="impressum">
-      <h2>Impressum</h2>
-      <p><strong>Firma:</strong> Eitan & Meir GmbH</p>
-      <p><strong>Vertretungsberechtigte:</strong> Murat Akdeniz, Zane Atlas Muslu</p>
-      <p><strong>Adresse:</strong> Marienfelder Allee 195f, 12279 Berlin, Deutschland</p>
-      <p><strong>Handelsregister:</strong> Amtsgericht Berlin, HRB 123456</p>
-      <p><strong>Umsatzsteuer-ID:</strong> DE123456789</p>
-      <p><strong>E-Mail:</strong> contact@eitan-meir.de</p>
-    </div>
 
-    <div class="privacy">
-      <h2>Datenschutzerklärung</h2>
-      <p>Wir respektieren Ihre Privatsphäre. Diese Website verwendet keine Cookies oder Analyse-Tools zur Speicherung personenbezogener Daten. Wenn Sie uns per E-Mail kontaktieren, verwenden wir Ihre Angaben ausschließlich zur Beantwortung Ihrer Anfrage und geben diese nicht an Dritte weiter.</p>
-      <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung oder Löschung Ihrer personenbezogenen Daten. Bitte kontaktieren Sie uns unter <a href="mailto:contact@eitan-meir.de">contact@eitan-meir.de</a> bei Fragen zum Datenschutz.</p>
-    </div>
-  </section>
-
-  <div id="cookie-banner">
-    <span>Diese Website verwendet nur essentielle Cookies. Durch die Nutzung stimmen Sie dem zu.</span>
-    <button onclick="document.getElementById('cookie-banner').style.display='none'">Verstanden</button>
-  </div>
+  </main>
 
   <footer>
-    &copy; 2025 Eitan & Meir GmbH. Alle Rechte vorbehalten. | <a href="#">Impressum</a> | <a href="#">Datenschutz</a>
+    <div class="footer-inner">
+      <div style="margin-bottom: 0.5rem;">&copy; 2025 Eitan & Meir GmbH. All rights reserved.</div>
+      <div>
+        <a href="Impressum.html">Impressum</a> &nbsp;|&nbsp; <a href="Impressum.html">Datenschutz</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

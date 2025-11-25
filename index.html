@@ -13,10 +13,16 @@
 
   <!-- Meta SEO -->
   <meta name="title" content="Eitan & Meir — Educational Technology for Computer Science, STEM & AI" />
-  <meta name="description" content="Eitan & Meir GmbH is a Berlin-based edtech company creating modular, hands-on learning tools and platforms that make Computer Science, STEM, and AI accessible and engaging for all ages." />
-  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Eitan & Meir GmbH: Berlin-based edtech creating Circubes® modular learning kits for hands-on Computer Science, STEM & AI education. Perfect for classrooms, makerspaces & educators worldwide." />
+  <meta name="keywords" content="educational technology, STEM education, computer science learning, AI education, modular learning kits, Circubes, hands-on learning, edtech Berlin, programming education, STEM tools, classroom technology, makerspaces, coding for kids, electronics education, educational hardware" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="language" content="en" />
   <meta name="author" content="Eitan & Meir GmbH" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="geo.region" content="DE-BE" />
+  <meta name="geo.placename" content="Berlin" />
+  <meta name="geo.position" content="52.520008;13.404954" />
+  <meta name="ICBM" content="52.520008, 13.404954" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Eitan & Meir — Educational Technology for Computer Science, STEM & AI" />
@@ -35,16 +41,72 @@
   <!-- <meta name="twitter:site" content="@YourHandle" /> -->
 
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="msapplication-TileColor" content="#6d28d9" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#6d28d9" />
 
   <!-- Styles & scripts -->
   <link href="./output.css" rel="stylesheet" />
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+  
+  <!-- Cookie Banner Styles -->
+  <style>
+    #cookieBanner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.98);
+      border-top: 1px solid #e5e7eb;
+      box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+      padding: 1.5rem;
+      display: none;
+    }
+    #cookieBanner.show {
+      display: block;
+    }
+    .dark #cookieBanner {
+      background: rgba(31, 41, 55, 0.98);
+      border-top-color: #374151;
+    }
+    .cookie-btn {
+      padding: 0.625rem 1.25rem;
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+    }
+    .cookie-btn-primary {
+      background: #7c3aed;
+      color: white;
+    }
+    .cookie-btn-primary:hover {
+      background: #6d28d9;
+    }
+    .cookie-btn-secondary {
+      background: #f3f4f6;
+      color: #374151;
+      border: 1px solid #d1d5db;
+    }
+    .cookie-btn-secondary:hover {
+      background: #e5e7eb;
+    }
+    .dark .cookie-btn-secondary {
+      background: #374151;
+      color: #f9fafb;
+      border-color: #4b5563;
+    }
+    .dark .cookie-btn-secondary:hover {
+      background: #4b5563;
+    }
+  </style>
 
   <!-- JSON-LD Organization (optional but good for SEO) -->
   <script type="application/ld+json">
@@ -52,21 +114,82 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Eitan & Meir GmbH",
+    "alternateName": "Eitan and Meir",
     "url": "https://eitan-meir.de/",
     "logo": "https://eitan-meir.de/logo.png",
-    "description": "Educational technology for Computer Science, STEM & AI — modular, hands-on learning kits and platforms.",
+    "description": "Berlin-based educational technology company creating modular, hands-on learning tools for Computer Science, STEM, and AI education. Makers of Circubes® electronic learning cubes.",
+    "foundingDate": "2024",
+    "email": "info@eitan-meir.de",
+    "telephone": "+491525289390",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Marienfelder Allee 195f",
       "addressLocality": "Berlin",
+      "postalCode": "12279",
       "addressCountry": "DE"
     },
-    "sameAs": []
+    "areaServed": "Worldwide",
+    "keywords": "educational technology, STEM education, computer science, AI learning, modular learning kits, Circubes, hands-on learning",
+    "slogan": "Making technology education accessible, creative, and fun",
+    "sameAs": [
+      "https://circubes.com"
+    ]
+  }
+  </script>
+  
+  <!-- JSON-LD Product for Circubes -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Circubes",
+    "brand": {
+      "@type": "Brand",
+      "name": "Eitan & Meir"
+    },
+    "description": "Modular electronic learning cubes for hands-on STEM, Computer Science, and AI education. Snap together to build circuits and explore technology concepts without wires or soldering.",
+    "category": "Educational Technology",
+    "url": "https://circubes.com",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "1"
+    }
+  }
+  </script>
+  
+  <!-- JSON-LD Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://eitan-meir.de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Education",
+        "item": "https://eitan-meir.de/#education"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Circubes",
+        "item": "https://circubes.com"
+      }
+    ]
   }
   </script>
 </head>
 
 <body>
-    <header class="fixed w-full">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-purple-700 focus:text-white">Skip to main content</a>
+    <header class="fixed w-full" role="banner">
         <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
                 <a href="#" class="flex items-center">
@@ -95,7 +218,7 @@
                             <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Circubes®</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Manuals</a>
+                            <a href="careers.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Careers</a>
                         </li>
                         <li>
                             <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Support</a>
@@ -109,6 +232,7 @@
         </nav>
     </header>
 
+    <main id="main-content" role="main">
     <!-- Start block -->
     <section class="bg-white dark:bg-gray-900">
         <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
@@ -118,7 +242,7 @@
                
             </div>
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="./images/hero.png" alt="hero image">
+                <img src="./images/hero.png" alt="Eitan & Meir educational technology platform showing modular learning tools for Computer Science, STEM and AI education" loading="eager">
             </div>                
         </div>
     </section>
@@ -227,14 +351,16 @@
 
       <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" style="width: 450px;"
            src="./images/feature-1.png" 
-           alt="Educational technology focus illustration">
+           alt="Interactive modular learning kits and Computer Science programming education tools by Eitan & Meir"
+           loading="lazy">
     </div>
 
     <!-- Row 2 -->
     <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
       <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" 
            src="./images/feature-2.png"  style="width: 450px;"
-           alt="STEM and AI education illustration">
+           alt="STEM-focused hardware and software development for educational content and curriculum design"
+           loading="lazy">
       
       <div class="text-gray-500 sm:text-lg dark:text-gray-400">
         <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
@@ -328,7 +454,7 @@
     <section class="bg-white dark:bg-gray-900">
         <div class="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
              <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="./images/circubes.jpg" alt="mockup" style="border-radius: 12px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <img src="./images/circubes.jpg" alt="Circubes modular electronic learning cubes for hands-on STEM, Computer Science and AI education" style="border-radius: 12px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" loading="lazy">
             </div>   
             <div class="place-self-center ml-auto lg:col-span-7">
                 <h1 class="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">Circubes®</h1>
@@ -410,9 +536,115 @@
   </div>
 </section>
 
+<!-- SynapTile Section -->
+ 
 
+    <section class="bg-white dark:bg-gray-900">
+        <div class="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+         
+            <div class="place-self-center ml-auto lg:col-span-7">
+                <h1 class="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">SynapTile™</h1>
+                <p class="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Physical Perceptron to Learn About AI.</p>
+   <p class="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"></p> Coming Soon
+SynapTile is currently in development. Join our mailing list to be notified when it launches.</p>
+             
+                
+                </div>
+                     <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="./images/snaptile.png" alt="Circubes modular electronic learning cubes for hands-on STEM, Computer Science and AI education" style="" loading="lazy">
+            </div>  
+                        
+        </div>
+    </section>
 
+<section class="bg-gray-50 dark:bg-gray-800">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <div class="mb-8 max-w-screen-md lg:mb-16">
+      <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
+        What is SynapTile™
+      </h2>
+      <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+        SynapTile transforms abstract neural network concepts into physical tiles that students can touch, connect, and manipulate, 
+        making complex AI concepts accessible to beginners while maintaining depth for advanced exploration.
+      </p>
+    </div>
+    
+    <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+      <div>
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-100 lg:h-12 lg:w-12 dark:bg-purple-900">
+          <svg class="w-5 h-5 text-purple-600 lg:w-6 lg:h-6 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Physical Perceptron</h3>
+        <p class="text-gray-500 dark:text-gray-400">
+          Build a working perceptron with physical components. Each tile represents a neuron or connection in the network, bringing AI to life.
+        </p>
+      </div>
 
+      <div>
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-100 lg:h-12 lg:w-12 dark:bg-purple-900">
+          <svg class="w-5 h-5 text-purple-600 lg:w-6 lg:h-6 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Visualize Neural Networks</h3>
+        <p class="text-gray-500 dark:text-gray-400">
+          Watch neural network operations happen in real-time as you manipulate tiles and see how data flows through the network.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-100 lg:h-12 lg:w-12 dark:bg-purple-900">
+          <svg class="w-5 h-5 text-purple-600 lg:w-6 lg:h-6 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+          </svg>
+        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Understand AI Fundamentals</h3>
+        <p class="text-gray-500 dark:text-gray-400">
+          Grasp weights, biases, and activation functions through hands-on experimentation. Perfect for introducing AI/ML in classrooms.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-100 lg:h-12 lg:w-12 dark:bg-purple-900">
+          <svg class="w-5 h-5 text-purple-600 lg:w-6 lg:h-6 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path>
+          </svg>
+        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Beginner to Advanced</h3>
+        <p class="text-gray-500 dark:text-gray-400">
+          Accessible to beginners learning AI basics while offering depth for advanced exploration of machine learning principles.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-100 lg:h-12 lg:w-12 dark:bg-purple-900">
+          <svg class="w-5 h-5 text-purple-600 lg:w-6 lg:h-6 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+          </svg>
+        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Classroom Ready</h3>
+        <p class="text-gray-500 dark:text-gray-400">
+          Designed for group learning and collaborative problem-solving. Ideal for schools, universities, and workshops.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-100 lg:h-12 lg:w-12 dark:bg-purple-900">
+          <svg class="w-5 h-5 text-purple-600 lg:w-6 lg:h-6 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Make AI Tangible</h3>
+        <p class="text-gray-500 dark:text-gray-400">
+          Transform abstract concepts into something students can touch, connect, and manipulate—bridging theory and practice.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section class="bg-white dark:bg-gray-900">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
@@ -423,7 +655,7 @@
 We design modular learning tools, create engaging content, and build technology that bridges Computer Science, STEM, and AI with curiosity and creativity.</p>
             </div>
             
-               <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" style="width: 450px;"           src="./images/feature-3.png"            alt="Educational technology focus illustration">            
+               <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" style="width: 450px;" src="./images/feature-3.png" alt="Educators, designers and technologists creating modular learning tools for Computer Science, STEM and AI education" loading="lazy">            
         </div>
     </section>
   <!-- Start block -->
@@ -561,22 +793,19 @@ We design modular learning tools, create engaging content, and build technology 
     </div>
   </div>
 </section>
+    </main>
 
-
- 
-
-
-    <footer class="bg-white dark:bg-gray-800">
-        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
-            <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+    <footer class="bg-white dark:bg-gray-800" role="contentinfo">
+        <div class="max-w-screen-xl p-4 py-5 mx-auto lg:py-16 md:p-8 lg:p-10">
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
                 <div>
                     <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h3>
                     <ul class="text-gray-500 dark:text-gray-400">
                         <li class="mb-4">
-                            <a href="#" class=" hover:underline">About</a>
+                            <a href="#about" class=" hover:underline">About</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Careers</a>
+                            <a href="careers.html" class="hover:underline">Careers</a>
                         </li>
                         <li class="mb-4">
                             <a href="#" class="hover:underline">Brand Center</a>
@@ -589,9 +818,7 @@ We design modular learning tools, create engaging content, and build technology 
                 <div>
                     <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h3>
                     <ul class="text-gray-500 dark:text-gray-400">
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Discord Server</a>
-                        </li>
+
                         <li class="mb-4">
                             <a href="#" class="hover:underline">Twitter</a>
                         </li>
@@ -604,36 +831,34 @@ We design modular learning tools, create engaging content, and build technology 
                     </ul>
                 </div>
                 <div>
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h3>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal (EN)</h3>
                     <ul class="text-gray-500 dark:text-gray-400">
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Privacy Policy</a>
+                            <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Licensing</a>
+                            <a href="licensing.html" class="hover:underline">Licensing</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Terms</a>
+                            <a href="terms.html" class="hover:underline">Terms</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h3>
+                    <h3 class="mb-5 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal (DE)</h3>
                     <ul class="text-gray-500 dark:text-gray-400">
                         <li class="mb-4">
-                            <a href="#" class=" hover:underline">About</a>
+                            <a href="Impressum.html" class="hover:underline">Impressum</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Careers</a>
+                            <a href="datenschutzerklaerung.html" class="hover:underline">Datenschutz</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Brand Center</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Blog</a>
+                            <a href="agb.html" class="hover:underline">AGB</a>
                         </li>
                     </ul>
                 </div>
+      
         
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
@@ -673,7 +898,97 @@ We design modular learning tools, create engaging content, and build technology 
             </div>
         </div>
     </footer>
+    <!-- Cookie Banner -->
+    <div id="cookieBanner">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex-1">
+            <p class="text-gray-900 dark:text-white font-medium mb-2">🍪 Cookie-Einstellungen</p>
+            <p class="text-sm text-gray-600 dark:text-gray-300">
+              Wir verwenden Cookies, um unsere Website bereitzustellen (notwendig), ihre Nutzung zu analysieren (Statistik) und Ihnen ggf. personalisierte Inhalte/Angebote anzuzeigen (Marketing). Sie können alle akzeptieren, nur notwendige zulassen oder Ihre Auswahl anpassen.
+            </p>
+            <a href="/datenschutzerklaerung.html" class="text-sm text-purple-600 dark:text-purple-400 hover:underline mt-1 inline-block">Mehr erfahren</a>
+          </div>
+          <div class="flex flex-wrap gap-2 md:flex-nowrap">
+            <button onclick="acceptAllCookies()" class="cookie-btn cookie-btn-primary mr-2">Alle akzeptieren</button>
+            <button onclick="acceptNecessaryCookies()" class="cookie-btn cookie-btn-secondary mr-2">Nur notwendige</button>
+            <button onclick="showCookieSettings()" class="cookie-btn cookie-btn-secondary">Anpassen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+
+    <!-- Cookie Banner Script -->
+    <script>
+      // Check if user has made a choice
+      function getCookieConsent() {
+        return localStorage.getItem('cookieConsent');
+      }
+
+      function setCookieConsent(value) {
+        localStorage.setItem('cookieConsent', value);
+        localStorage.setItem('cookieConsentDate', new Date().toISOString());
+      }
+
+      function showCookieBanner() {
+        document.getElementById('cookieBanner').classList.add('show');
+      }
+
+      function hideCookieBanner() {
+        document.getElementById('cookieBanner').classList.remove('show');
+      }
+
+      function acceptAllCookies() {
+        setCookieConsent('all');
+        hideCookieBanner();
+        loadAnalytics();
+        console.log('All cookies accepted');
+      }
+
+      function acceptNecessaryCookies() {
+        setCookieConsent('necessary');
+        hideCookieBanner();
+        console.log('Only necessary cookies accepted');
+      }
+
+      function showCookieSettings() {
+        // For now, just link to privacy policy
+        // You can implement a modal with checkboxes for each category later
+        alert('Cookie-Einstellungen:\n\n✓ Notwendig (immer aktiv)\n☐ Statistik\n☐ Marketing\n\nFür detaillierte Einstellungen besuchen Sie bitte unsere Datenschutzerklärung.');
+        acceptNecessaryCookies();
+      }
+
+      function loadAnalytics() {
+        // Load analytics only if consent is given
+        const consent = getCookieConsent();
+        if (consent === 'all') {
+          // Initialize Firebase Analytics (already in page)
+          console.log('Analytics enabled');
+          // Your analytics code is already loaded via the module script below
+        }
+      }
+
+      // Check on page load
+      window.addEventListener('DOMContentLoaded', function() {
+        const consent = getCookieConsent();
+        if (!consent) {
+          // No consent yet, show banner
+          showCookieBanner();
+        } else if (consent === 'all') {
+          // User accepted all, load analytics
+          loadAnalytics();
+        }
+      });
+
+      // Function to reset cookie consent (for testing)
+      function resetCookieConsent() {
+        localStorage.removeItem('cookieConsent');
+        localStorage.removeItem('cookieConsentDate');
+        location.reload();
+      }
+    </script>
 
     <script type="module">
   // Import the functions you need from the SDKs you need

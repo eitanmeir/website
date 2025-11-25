@@ -1,0 +1,24 @@
+Kurzer Cookie-Banner Text (Popup)
+================================================
+Wir verwenden Cookies, um unsere Website bereitzustellen (notwendig), ihre Nutzung zu analysieren (Statistik) und Ihnen ggf. personalisierte Inhalte/Angebote anzuzeigen (Marketing). Sie können alle akzeptieren, nur notwendige zulassen oder Ihre Auswahl anpassen.
+
+Buttons:
+[Alle akzeptieren] [Nur notwendige] [Anpassen]
+
+Ausführlicher Einwilligungstext
+================================================
+Diese Website nutzt Cookies und ähnliche Technologien. Notwendige Cookies sind für den Betrieb der Seite unerlässlich und werden unmittelbar gesetzt. Statistik-Cookies helfen uns zu verstehen, wie Besucher mit der Seite interagieren (anonymisierte Auswertungen). Marketing-Cookies dienen dazu, Ihnen relevante Inhalte und Angebote anzuzeigen. Nicht notwendige Cookies werden nur nach Ihrer Einwilligung gesetzt.
+
+Kategorie-Definitionen:
+- Notwendig: Grundfunktionen wie Seitennavigation, Sicherheit, Consent-Speicherung.
+- Statistik: Anonyme Auswertung von Seitenaufrufen und Interaktionen.
+- Marketing: Personalisierung, ggf. Retargeting und Angebotsoptimierung.
+
+Ihre Auswahl können Sie jederzeit in den Cookie-Einstellungen widerrufen oder anpassen.
+Rechtsgrundlage für notwendige Cookies ist Art. 6 Abs. 1 lit. f DSGVO. Für Statistik und Marketing erfolgt die Verarbeitung auf Basis Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Weitere Details finden Sie in unserer Datenschutzerklärung.
+
+Buttons (Empfehlung):
+[Alle akzeptieren]  [Nicht notwendige ablehnen]  [Individuell anpassen]
+
+Optionaler Hinweis:
+Durch Klick auf „Nicht notwendige ablehnen“ werden ausschließlich technisch erforderliche Cookies gesetzt.

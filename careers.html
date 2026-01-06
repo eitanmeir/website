@@ -1,31 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers - Eitan & Meir</title>
-    <link href="./output.css" rel="stylesheet">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://eitan-meir.de/careers" />
+
+  <!-- Basics -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Careers — Eitan & Meir</title>
+
+  <!-- Meta SEO -->
+  <meta name="title" content="Careers — Eitan & Meir" />
+  <meta name="description" content="Join our team at Eitan & Meir GmbH - Educational Technology for Computer Science, STEM & AI" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="en" />
+  <meta name="author" content="Eitan & Meir GmbH" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#6d28d9" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Styles -->
+  <link href="./output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+  </style>
 </head>
-<body class="bg-white dark:bg-gray-900">
-    <section class="bg-white dark:bg-gray-900 min-h-screen flex items-center justify-center">
-        <div class="max-w-2xl px-4 mx-auto text-center">
-            <a href="index.html" class="inline-block mb-8">
-                <span class="text-2xl font-bold text-gray-900 dark:text-white">Eitan & Meir</span>
-            </a>
-            
-            <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 md:text-5xl dark:text-white">Careers</h1>
-            
-            <div class="mt-12 p-8 bg-gray-50 border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
-                <svg class="mx-auto mb-4 w-16 h-16 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-                <h2 class="mb-2 text-2xl font-bold text-gray-900 dark:text-white">No Open Positions</h2>
-                <p class="mb-4 text-gray-500 dark:text-gray-400">We currently don't have any open positions available.</p>
-                <p class="text-gray-500 dark:text-gray-400">For inquiries: <a href="mailto:info@eitan-meir.de" class="text-purple-600 hover:underline dark:text-purple-500">info@eitan-meir.de</a></p>
+
+<body>
+    <header class="fixed w-full z-50">
+        <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+                <a href="/" class="flex items-center">
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">eitan & meir</span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <a href="https://circubes.com" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Shop Now</a>
+                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="/" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                        </li>
+                        <li>
+                            <a href="/#education" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Education</a>
+                        </li>
+                        <li>
+                            <a href="https://circubes.com" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Circubes®</a>
+                        </li>
+                        <li>
+                            <a href="/careers.html" class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white" aria-current="page">Careers</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            
-            <a href="index.html" class="inline-block mt-8 text-purple-600 hover:underline dark:text-purple-400">← Back to Home</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="bg-white dark:bg-gray-900 min-h-screen">
+        <div class="max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:pt-28 lg:pb-16">
+            <div class="max-w-2xl mx-auto text-center">
+                <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl dark:text-white">Careers</h1>
+                <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Join our mission to make technology education accessible, creative, and fun</p>
+                
+                <div class="mt-12 p-8 bg-gray-50 border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                    <svg class="mx-auto mb-4 w-16 h-16 text-purple-500 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <h2 class="mb-2 text-2xl font-bold text-gray-900 dark:text-white">No Open Positions</h2>
+                    <p class="mb-4 text-gray-500 dark:text-gray-400">We currently don't have any open positions available, but we're always interested in hearing from talented individuals.</p>
+                    <p class="text-gray-500 dark:text-gray-400">For inquiries, please reach out to us at <a href="mailto:info@eitan-meir.de" class="text-purple-600 hover:underline dark:text-purple-500">info@eitan-meir.de</a></p>
+                </div>
+                
+                <a href="/" class="inline-flex items-center mt-8 text-purple-600 hover:underline dark:text-purple-400">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back to Home
+                </a>
+            </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800">
+        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+            <div class="text-center">
+                <a href="/" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
+                   eitan & meir
+                </a>
+                <span class="block text-sm text-center text-gray-500 dark:text-gray-400">
+                    © 2025 Eitan & Meir GmbH. All Rights Reserved.
+                </span>
+                <ul class="flex justify-center mt-5 space-x-5">
+                    <li>
+                        <a href="/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">Home</a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy.html" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/terms.html" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">Terms</a>
+                    </li>
+                    <li>
+                        <a href="/licensing.html" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">Licensing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
 </body>
 </html>

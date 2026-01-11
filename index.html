@@ -672,16 +672,80 @@
     <!-- Balance Product -->
     <section class="bg-white dark:bg-gray-900">
         <div class="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="./images/feature-3.png" alt="Balance educational mobile game teaching programming concepts to children" style="border-radius: 12px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" loading="lazy">
+             <!-- Mobile Video (visible on small screens) -->
+             <div class="lg:hidden mb-8 flex justify-center">
+                <div class="relative" style="max-width: 280px; width: 100%;">
+                    <div class="relative" style="background: #1f1f1f; border-radius: 40px; padding: 8px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);">
+                        <div class="relative overflow-hidden" style="background: #000; border-radius: 32px; aspect-ratio: 9/19.5;">
+                            <video 
+                                autoplay 
+                                loop 
+                                muted 
+                                playsinline
+                                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                                aria-label="Balance - Number Harmony Game gameplay video">
+                                <source src="./images/balance.mov" type="video/quicktime">
+                                <source src="./images/balance.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             <!-- Desktop iPhone Frame (visible on large screens) -->
+             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex lg:justify-center lg:items-center">
+                <div class="relative" style="max-width: 320px; width: 100%;">
+                    <!-- iPhone Frame -->
+                    <div class="relative" style="background: #1f1f1f; border-radius: 50px; padding: 12px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);">
+                        <!-- Notch -->
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2" style="width: 150px; height: 30px; background: #1f1f1f; border-radius: 0 0 20px 20px; z-index: 10;"></div>
+                        <!-- Screen -->
+                        <div class="relative overflow-hidden" style="background: #000; border-radius: 40px; aspect-ratio: 9/19.5;">
+                            <video 
+                                autoplay 
+                                loop 
+                                muted 
+                                playsinline
+                                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                                aria-label="Balance - Number Harmony Game gameplay video">
+                                <source src="./images/balance.mov" type="video/quicktime">
+                                <source src="./images/balance.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <!-- Home Indicator -->
+                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2" style="width: 134px; height: 5px; background: rgba(255, 255, 255, 0.3); border-radius: 3px; z-index: 10;"></div>
+                    </div>
+                </div>
             </div>   
             <div class="place-self-center ml-auto lg:col-span-7">
                 <h1 class="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">Balance</h1>
-                <p class="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Learn programming through interactive visual gameplay. Transform abstract programming concepts into engaging challenges for children ages 6-12.</p>
+                <p class="mb-4 max-w-2xl font-light text-gray-500 lg:mb-6 md:text-lg lg:text-xl dark:text-gray-400">Number Harmony Game - Learn Math the Easy Way!</p>
+                <p class="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-base lg:text-lg dark:text-gray-400">An engaging mobile game that teaches mathematical thinking through interactive number balancing challenges. Perfect for ages 9+ to develop problem-solving skills and numerical intuition.</p>
     
-             
-                    <a href="#" class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-                       <img class="w-6 h-6 rounded-full mr-2" src="./images/logo_600.png" >  Learn More                 </a>
+                <div class="mb-4">
+                    <a href="https://apps.apple.com/us/app/balance-number-harmony-game/id1669592158" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-white bg-purple-700 rounded-lg hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                        </svg>
+                        Download on App Store
+                    </a>
+                </div>
+                <div class="flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400">
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"></path></svg>
+                        Ages 9+
+                    </span>
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg>
+                        iPhone & iPad
+                    </span>
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                        $1.99
+                    </span>
+                </div>
                 </div>
                         
         </div>
@@ -694,84 +758,52 @@
         What is Balance
       </h2>
       <p class="text-gray-500 sm:text-xl dark:text-gray-400">
-        Balance is an educational mobile game that teaches children fundamental programming concepts through interactive, 
-        visual programming. Children program a robot to reach a star by creating sequences of movement commands, 
-        learning computational thinking skills in a fun and engaging way.
+        Balance is an educational mobile game that teaches mathematical thinking through interactive number harmony challenges. 
+        Players balance left and right values by strategically selecting numbers, developing problem-solving skills, 
+        numerical intuition, and mathematical reasoning in a fun and engaging way.
       </p>
     </div>
     
     <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
       <div>
-        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-100 lg:h-12 lg:w-12 dark:bg-purple-900">
-          <svg class="w-5 h-5 text-purple-600 lg:w-6 lg:h-6 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-          </svg>
-        </div>
-        <h3 class="mb-2 text-xl font-bold dark:text-white">Visual Programming</h3>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Number Harmony</h3>
         <p class="text-gray-500 dark:text-gray-400">
-          Complex programming concepts made simple through visual representation. Children see their programs as step-by-step sequences, making abstract ideas tangible.
+          Master the art of balancing numbers. Players learn to calculate differences and strategically select numbers to achieve perfect balance between left and right sides.
         </p>
       </div>
 
       <div>
-        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-100 lg:h-12 lg:w-12 dark:bg-purple-900">
-          <svg class="w-5 h-5 text-purple-600 lg:w-6 lg:h-6 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path>
-          </svg>
-        </div>
-        <h3 class="mb-2 text-xl font-bold dark:text-white">Sequential Thinking</h3>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Strategic Thinking</h3>
         <p class="text-gray-500 dark:text-gray-400">
-          Learn that programs execute commands in order, one after another. Children understand that sequence matters and each command has a specific effect.
+          Develop critical thinking skills by planning moves ahead. Each decision affects the balance, teaching players to think strategically about number selection and placement.
         </p>
       </div>
 
       <div>
-        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-100 lg:h-12 lg:w-12 dark:bg-purple-900">
-          <svg class="w-5 h-5 text-purple-600 lg:w-6 lg:h-6 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
-          </svg>
-        </div>
-        <h3 class="mb-2 text-xl font-bold dark:text-white">Step Planning</h3>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Real-Time Feedback</h3>
         <p class="text-gray-500 dark:text-gray-400">
-          Break down problems into smaller steps. Children learn to think ahead, plan their solution, and review their program before executing.
+          See the difference between left and right values instantly. Visual feedback helps players understand mathematical relationships and learn from each move.
         </p>
       </div>
 
       <div>
-        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-100 lg:h-12 lg:w-12 dark:bg-purple-900">
-          <svg class="w-5 h-5 text-purple-600 lg:w-6 lg:h-6 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
-          </svg>
-        </div>
-        <h3 class="mb-2 text-xl font-bold dark:text-white">Debugging Skills</h3>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Score & Progress</h3>
         <p class="text-gray-500 dark:text-gray-400">
-          Learn that programs don't always work the first time. Children develop problem-solving skills by identifying errors and fixing them through trial and error.
+          Track your progress with scores and move counts. Challenge yourself to achieve higher scores with fewer moves, encouraging efficient problem-solving.
         </p>
       </div>
 
       <div>
-        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-100 lg:h-12 lg:w-12 dark:bg-purple-900">
-          <svg class="w-5 h-5 text-purple-600 lg:w-6 lg:h-6 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-          </svg>
-        </div>
-        <h3 class="mb-2 text-xl font-bold dark:text-white">Progressive Difficulty</h3>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Progressive Levels</h3>
         <p class="text-gray-500 dark:text-gray-400">
-          Carefully designed levels that build skills gradually. Each level introduces new concepts while building on previous knowledge, ensuring children are always challenged but never overwhelmed.
+          Carefully designed levels that increase in complexity. Each level builds on previous skills, ensuring players are always challenged but never overwhelmed.
         </p>
       </div>
 
       <div>
-        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-100 lg:h-12 lg:w-12 dark:bg-purple-900">
-          <svg class="w-5 h-5 text-purple-600 lg:w-6 lg:h-6 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
-          </svg>
-        </div>
-        <h3 class="mb-2 text-xl font-bold dark:text-white">Age-Appropriate Learning</h3>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Perfect for Ages 9+</h3>
         <p class="text-gray-500 dark:text-gray-400">
-          Designed specifically for children ages 6-12. No prior programming knowledge required—accessible to complete beginners while teaching real computational thinking skills.
+          Designed specifically for children and learners ages 9 and up. No prior math knowledge required—accessible to beginners while building strong numerical foundations.
         </p>
       </div>
     </div>

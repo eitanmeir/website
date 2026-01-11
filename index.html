@@ -201,8 +201,8 @@
 
 <body>
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-purple-700 focus:text-white">Skip to main content</a>
-    <header class="fixed w-full" role="banner">
-        <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+    <header class="fixed w-full" style="z-index: 10000;" role="banner">
+        <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900" style="position: relative; z-index: 10000;">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
                 <a href="#" class="flex items-center">
                     
@@ -671,18 +671,20 @@
 
     <!-- Balance Product -->
     <section class="bg-white dark:bg-gray-900">
-        <div class="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12" style="position: relative; z-index: 1;">
              <!-- Mobile Video (visible on small screens) -->
              <div class="lg:hidden mb-8 flex justify-center">
-                <div class="relative" style="max-width: 280px; width: 100%;">
-                    <div class="relative" style="background: #1f1f1f; border-radius: 40px; padding: 8px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);">
-                        <div class="relative overflow-hidden" style="background: #000; border-radius: 32px; aspect-ratio: 9/19.5;">
+                <div class="relative" style="max-width: 300px; width: 100%; z-index: 1;">
+                    <!-- iPhone 17 Pro Max Frame -->
+                    <div class="relative" style="background: linear-gradient(135deg, #2c2c2e 0%, #1c1c1e 100%); border-radius: 55px; padding: 10px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.05); z-index: 1;">
+                        <!-- Screen -->
+                        <div class="relative overflow-hidden" style="background: #000; border-radius: 45px; aspect-ratio: 430/932;">
                             <video 
                                 autoplay 
                                 loop 
                                 muted 
                                 playsinline
-                                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                                style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 45px;"
                                 aria-label="Balance - Number Harmony Game gameplay video">
                                 <source src="./images/balance.mov" type="video/quicktime">
                                 <source src="./images/balance.mov" type="video/mp4">
@@ -693,29 +695,25 @@
                 </div>
             </div>
             
-             <!-- Desktop iPhone Frame (visible on large screens) -->
+             <!-- Desktop iPhone 17 Pro Max Frame (visible on large screens) -->
              <div class="hidden lg:mt-0 lg:col-span-5 lg:flex lg:justify-center lg:items-center">
-                <div class="relative" style="max-width: 320px; width: 100%;">
-                    <!-- iPhone Frame -->
-                    <div class="relative" style="background: #1f1f1f; border-radius: 50px; padding: 12px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);">
-                        <!-- Notch -->
-                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2" style="width: 150px; height: 30px; background: #1f1f1f; border-radius: 0 0 20px 20px; z-index: 10;"></div>
+                <div class="relative" style="max-width: 380px; width: 100%; z-index: 1;">
+                    <!-- iPhone 17 Pro Max Frame -->
+                    <div class="relative" style="background: linear-gradient(135deg, #2c2c2e 0%, #1c1c1e 100%); border-radius: 60px; padding: 14px; box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.05); z-index: 1;">
                         <!-- Screen -->
-                        <div class="relative overflow-hidden" style="background: #000; border-radius: 40px; aspect-ratio: 9/19.5;">
+                        <div class="relative overflow-hidden" style="background: #000; border-radius: 50px; aspect-ratio: 430/932;">
                             <video 
                                 autoplay 
                                 loop 
                                 muted 
                                 playsinline
-                                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                                style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 50px;"
                                 aria-label="Balance - Number Harmony Game gameplay video">
                                 <source src="./images/balance.mov" type="video/quicktime">
                                 <source src="./images/balance.mov" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
-                        <!-- Home Indicator -->
-                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2" style="width: 134px; height: 5px; background: rgba(255, 255, 255, 0.3); border-radius: 3px; z-index: 10;"></div>
                     </div>
                 </div>
             </div>   

@@ -55,8 +55,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
   <style>
     /* Override Tailwind's default font stack to use Inter sitewide */
     html {
@@ -119,79 +117,6 @@
     }
     .dark .cookie-btn-secondary:hover {
       background: #4b5563;
-    }
-    
-    /* Store Buttons */
-    .store-buttons-container {
-      display: flex;
-      flex-direction: row;
-      gap: 0.75rem;
-      flex-wrap: nowrap;
-    }
-    
-    .store-btn {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.75rem 1.25rem;
-      background: #1a1a1a;
-      color: white;
-      border-radius: 0.75rem;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-size: 0.875rem;
-      width: 160px;
-      height: 56px;
-      flex-shrink: 0;
-    }
-    
-    .store-btn:hover {
-      background: #333;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    }
-    
-    .store-btn i {
-      font-size: 1.75rem;
-      flex-shrink: 0;
-    }
-    
-    .store-btn-text {
-      text-align: left;
-      flex: 1;
-      min-width: 0;
-    }
-    
-    .store-btn-label {
-      font-size: 0.625rem;
-      opacity: 0.8;
-      line-height: 1.2;
-      white-space: nowrap;
-    }
-    
-    .store-btn-name {
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: 1.2;
-      white-space: nowrap;
-    }
-    
-    .dark .store-btn {
-      background: #1a1a1a;
-    }
-    
-    .dark .store-btn:hover {
-      background: #2a2a2a;
-    }
-    
-    @media (max-width: 640px) {
-      .store-buttons-container {
-        flex-direction: column;
-      }
-      
-      .store-btn {
-        width: 100%;
-      }
     }
   </style>
 
@@ -516,23 +441,42 @@
 
     <!-- Start block -->
     <section class="bg-gray-50 dark:bg-gray-800">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
-            <figure class="max-w-screen-md mx-auto">
-                <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
-                </svg> 
-                <blockquote>
-                    <p class="text-xl font-medium text-gray-900 md:text-2xl dark:text-white">"The Circubes guest lecture at Berlin International College was an incredible experience for our students. Many shared that it was unlike anything they had seen before, and they especially loved experimenting hands-on with the cubes to explore different concepts. The session connected directly to what they are studying, while also giving them a glimpse into the future of technology. We would be delighted to host Circubes again for our next intake."</p>
-                </blockquote>
-                <figcaption class="flex items-center justify-center mt-6 space-x-3">
-                     <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                        <div class="pr-3 font-medium text-gray-900 dark:text-white">Alexandra Walch</div>
-                        <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Project Coordinator at Berlin International College</div>
-                    </div>
-                </figcaption>
-            </figure>
+        <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
+            <div class="max-w-4xl mx-auto">
+                <!-- BIC Logo -->
+                <div class="flex justify-center mb-8">
+                    <img src="./images/BIC-Wort-Bildmarke 300x283.png" 
+                         alt="Berlin International College Logo" 
+                         class="object-contain"
+                         width="120" >
+                </div>
+                
+                <!-- Testimonial Content -->
+                <figure class="text-center">
+                    <svg class="h-10 mx-auto mb-6 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                    </svg>
+                    
+                    <blockquote>
+                        <p class="text-lg md:text-xl lg:text-2xl font-normal leading-relaxed text-gray-900 dark:text-white mb-8 px-4">
+                            "The Circubes guest lecture at Berlin International College was an incredible experience for our students. Many shared that it was unlike anything they had seen before, and they especially loved experimenting hands-on with the cubes to explore different concepts. The session connected directly to what they are studying, while also giving them a glimpse into the future of technology. We would be delighted to host Circubes again for our next intake."
+                        </p>
+                    </blockquote>
+                    
+                    <figcaption class="mt-8">
+                        <div class="flex flex-col items-center space-y-2">
+                            <div class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Alexandra Walch
+                            </div>
+                            <div class="text-base text-gray-600 dark:text-gray-400">
+                                Project Coordinator at Berlin International College
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
-      </section>
+    </section>
     <!-- End block -->
     <!-- Start block -->
    
@@ -797,23 +741,19 @@
                 <p class="mb-4 max-w-2xl font-light text-gray-500 lg:mb-6 md:text-lg lg:text-xl dark:text-gray-400">Number Harmony Game - Learn Math the Easy Way!</p>
                 <p class="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-base lg:text-lg dark:text-gray-400">An engaging mobile game that teaches mathematical thinking through interactive number balancing challenges. Perfect for ages 9+ to develop problem-solving skills and numerical intuition.</p>
     
-                <div class="mb-4">
-                    <div class="store-buttons-container">
-                        <a href="https://apps.apple.com/us/app/balance-number-harmony-game/id1669592158" target="_blank" rel="noopener noreferrer" class="store-btn">
-                            <i class="bi-apple"></i>
-                            <div class="store-btn-text">
-                                <div class="store-btn-label">Download on the</div>
-                                <div class="store-btn-name">App Store</div>
-                            </div>
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.eitanmeir.balance" target="_blank" rel="noopener noreferrer" class="store-btn">
-                            <i class="bi-android2"></i>
-                            <div class="store-btn-text">
-                                <div class="store-btn-label">Get it on</div>
-                                <div class="store-btn-name">Google Play</div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="flex flex-col sm:flex-row gap-3 mb-4">
+                    <a href="https://apps.apple.com/us/app/balance-number-harmony-game/id1669592158" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-white bg-black rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-700 transition-all duration-200">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                        </svg>
+                        App Store
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.eitanmeir.balance" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-white bg-black rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-700 transition-all duration-200">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L6.05,21.34L14.54,12.85L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                        </svg>
+                        Google Play
+                    </a>
                 </div>
                 <div class="flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400">
                     <span class="flex items-center">
@@ -822,7 +762,7 @@
                     </span>
                     <span class="flex items-center">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg>
-                        iOS & Android
+                        iPhone & iPad
                     </span>
                     <span class="flex items-center">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
@@ -947,15 +887,12 @@
                 <p class="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-base lg:text-lg dark:text-gray-400">An educational application for iPad that teaches children the basics of software programming. Your child will become familiar with loops, solving steps to complete games, and finding the right and quick way to solve levels.</p>
     
                 <div class="mb-4">
-                    <div class="store-buttons-container">
-                        <a href="https://apps.apple.com/us/app/basic-step-coding-for-kids/id1263486157" target="_blank" rel="noopener noreferrer" class="store-btn">
-                            <i class="bi-apple"></i>
-                            <div class="store-btn-text">
-                                <div class="store-btn-label">Download on the</div>
-                                <div class="store-btn-name">App Store</div>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="https://apps.apple.com/us/app/basic-step-coding-for-kids/id1263486157" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-white bg-purple-700 rounded-lg hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                        </svg>
+                        Download on App Store
+                    </a>
                 </div>
                 <div class="flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400">
                     <span class="flex items-center">

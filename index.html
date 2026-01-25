@@ -120,82 +120,173 @@
     }
   </style>
 
-  <!-- JSON-LD Organization (optional but good for SEO) -->
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Eitan & Meir GmbH",
-    "alternateName": "Eitan and Meir",
-    "url": "https://eitan-meir.de/",
-    "logo": "https://eitan-meir.de/logo.png",
-    "description": "Berlin-based educational technology company creating modular, hands-on learning tools for Computer Science, STEM, and AI education. Makers of Circubes® electronic learning cubes.",
-    "foundingDate": "2024",
-    "email": "info@eitan-meir.de",
-    "telephone": "+491525289390",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Marienfelder Allee 195f",
-      "addressLocality": "Berlin",
-      "postalCode": "12279",
-      "addressCountry": "DE"
-    },
-    "areaServed": "Worldwide",
-    "keywords": "educational technology, STEM education, computer science, AI learning, modular learning kits, Circubes, hands-on learning",
-    "slogan": "Making technology education accessible, creative, and fun",
-    "sameAs": [
-      "https://circubes.com"
-    ]
-  }
-  </script>
-  
-  <!-- JSON-LD Product for Circubes -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Circubes",
-    "brand": {
-      "@type": "Brand",
-      "name": "Eitan & Meir"
-    },
-    "description": "Modular electronic learning cubes for hands-on STEM, Computer Science, and AI education. Snap together to build circuits and explore technology concepts without wires or soldering.",
-    "category": "Educational Technology",
-    "url": "https://circubes.com",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "1"
-    }
-  }
-  </script>
-  
-  <!-- JSON-LD Breadcrumb -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://eitan-meir.de/"
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Eitan & Meir GmbH",
+      "alternateName": "Eitan and Meir",
+      "url": "https://eitan-meir.de/",
+      "logo": "https://eitan-meir.de/images/logo_600.png",
+      "description": "Berlin-based educational technology company creating modular, hands-on learning tools for Computer Science, STEM, and AI education. Makers of Circubes® electronic learning cubes.",
+      "foundingDate": "2024",
+      "email": "info@eitan-meir.de",
+      "telephone": "+491525289390",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Marienfelder Allee 195f",
+        "addressLocality": "Berlin",
+        "postalCode": "12279",
+        "addressCountry": "DE"
       },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Education",
-        "item": "https://eitan-meir.de/#education"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Circubes",
-        "item": "https://circubes.com"
+      "areaServed": "Worldwide",
+      "keywords": "educational technology, STEM education, computer science, AI learning, modular learning kits, Circubes, hands-on learning",
+      "slogan": "Making technology education accessible, creative, and fun",
+      "sameAs": [
+        "https://circubes.com",
+        "https://apps.apple.com/us/app/balance-number-harmony-game/id1669592158",
+        "https://play.google.com/store/apps/details?id=com.eitanmeir.balance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://eitan-meir.de/",
+      "name": "Eitan & Meir",
+      "description": "Educational Technology for Computer Science, STEM & AI",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://eitan-meir.de/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
-    ]
-  }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Circubes®",
+      "image": "https://eitan-meir.de/images/circubes.jpg",
+      "description": "Modular electronic learning cubes for hands-on STEM, Computer Science, and AI education. Snap together to build circuits and explore technology concepts without wires or soldering.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Eitan & Meir"
+      },
+      "category": "Educational Technology",
+      "url": "https://circubes.com",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "1"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "SynapTile™",
+      "image": "https://eitan-meir.de/images/snaptile.png",
+      "description": "Physical Perceptron to Learn About AI. SynapTile transforms abstract neural network concepts into physical tiles that students can touch, connect, and manipulate.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Eitan & Meir"
+      },
+      "category": "Educational Technology"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Balance: Number Harmony Game",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "EducationalGame",
+      "description": "An engaging mobile game that teaches mathematical thinking through interactive number balancing challenges.",
+      "image": "https://eitan-meir.de/images/hero2.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "1.99",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "JuniorCoder",
+      "operatingSystem": "iOS",
+      "applicationCategory": "EducationalApplication",
+      "description": "An educational application for iPad that teaches children the basics of software programming using visual sequences.",
+      "offers": {
+        "@type": "Offer",
+        "price": "1.99",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Circubes® and who is it for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Circubes is a modular, hands-on learning kit where each cube contains a real electronic component. It's ideal for classrooms, makerspaces, after-school clubs, and home learning for ages ~8+."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Circubes support curriculum and learning outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our lesson ideas and projects map to core STEM/CS skills: circuits, sensors, logic, problem-solving, and algorithmic thinking. Activities scale from beginner to advanced with the same cubes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do I need to get started? Any special tools or software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Just the kit and a flat surface. No soldering, no loose wires. All components are reusable and classroom-friendly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can schools purchase, pilot, or get educator pricing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer pilot kits, bulk orders, and educator discounts for schools, universities, and nonprofits. Contact us at info@eitan-meir.de for more information."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://eitan-meir.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Education",
+          "item": "https://eitan-meir.de/#education"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Products",
+          "item": "https://eitan-meir.de/#products"
+        }
+      ]
+    }
+  ]
   </script>
 </head>
 

@@ -184,10 +184,10 @@
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
           "applicableCountry": "DE",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnPeriod",
+          "returnPolicyCategory": "MerchantReturnFiniteReturnPeriod",
           "merchantReturnDays": 14,
-          "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/FreeReturn"
+          "returnMethod": "MerchantReturnByMail",
+          "returnFees": "FreeReturn"
         },
         "shippingDetails": {
           "@type": "OfferShippingDetails",
@@ -244,10 +244,10 @@
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
           "applicableCountry": "DE",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnPeriod",
+          "returnPolicyCategory": "MerchantReturnFiniteReturnPeriod",
           "merchantReturnDays": 14,
-          "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/FreeReturn"
+          "returnMethod": "MerchantReturnByMail",
+          "returnFees": "FreeReturn"
         },
         "shippingDetails": {
           "@type": "OfferShippingDetails",
@@ -259,8 +259,28 @@
           "shippingDestination": {
             "@type": "DefinedRegion",
             "addressCountry": "DE"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 1,
+              "unitCode": "d"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 3,
+              "unitCode": "d"
+            }
           }
         }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
       }
     },
     {
@@ -283,13 +303,22 @@
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
           "applicableCountry": "US",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnPeriod",
+          "returnPolicyCategory": "MerchantReturnFiniteReturnPeriod",
           "merchantReturnDays": 14,
-          "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/FreeReturn"
+          "returnMethod": "MerchantReturnByMail",
+          "returnFees": "FreeReturn"
         },
         "shippingDetails": {
           "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
           "deliveryTime": {
             "@type": "ShippingDeliveryTime",
             "handlingTime": {
@@ -333,13 +362,22 @@
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
           "applicableCountry": "US",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnPeriod",
+          "returnPolicyCategory": "MerchantReturnFiniteReturnPeriod",
           "merchantReturnDays": 14,
-          "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/FreeReturn"
+          "returnMethod": "MerchantReturnByMail",
+          "returnFees": "FreeReturn"
         },
         "shippingDetails": {
           "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
           "deliveryTime": {
             "@type": "ShippingDeliveryTime",
             "handlingTime": {

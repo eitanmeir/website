@@ -63,61 +63,6 @@
     }
   </style>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-  
-  <!-- Cookie Banner Styles -->
-  <style>
-    #cookieBanner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(255, 255, 255, 0.98);
-      border-top: 1px solid #e5e7eb;
-      box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
-      z-index: 9999;
-      padding: 1.5rem;
-      display: none;
-    }
-    #cookieBanner.show {
-      display: block;
-    }
-    .dark #cookieBanner {
-      background: rgba(31, 41, 55, 0.98);
-      border-top-color: #374151;
-    }
-    .cookie-btn {
-      padding: 0.625rem 1.25rem;
-      border-radius: 0.5rem;
-      font-size: 0.875rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s;
-      border: none;
-    }
-    .cookie-btn-primary {
-      background: #7c3aed;
-      color: white;
-    }
-    .cookie-btn-primary:hover {
-      background: #6d28d9;
-    }
-    .cookie-btn-secondary {
-      background: #f3f4f6;
-      color: #374151;
-      border: 1px solid #d1d5db;
-    }
-    .cookie-btn-secondary:hover {
-      background: #e5e7eb;
-    }
-    .dark .cookie-btn-secondary {
-      background: #374151;
-      color: #f9fafb;
-      border-color: #4b5563;
-    }
-    .dark .cookie-btn-secondary:hover {
-      background: #4b5563;
-    }
-  </style>
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -1412,6 +1357,9 @@ Wir entwickeln modulare Lern-Tools, erstellen ansprechende Inhalte und bauen Tec
                         <li class="mb-4">
                             <a href="barrierefreiheit.html" class="hover:underline">Barrierefreiheit</a>
                         </li>
+                        <li class="mb-4">
+                            <a href="#" onclick="if(window.klaro){klaro.getManager().showSettings();} return false;" class="hover:underline">Cookie-Einstellungen</a>
+                        </li>
                     </ul>
                 </div>
       
@@ -1453,108 +1401,18 @@ Wir entwickeln modulare Lern-Tools, erstellen ansprechende Inhalte und bauen Tec
             </div>
         </div>
     </footer>
-    <!-- Cookie Banner -->
-    <div id="cookieBanner">
-      <div class="max-w-screen-xl mx-auto">
-        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div class="flex-1">
-            <p class="text-gray-900 dark:text-white font-medium mb-2">🍪 Cookie-Einstellungen</p>
-            <p class="text-sm text-gray-600 dark:text-gray-300">
-              Wir verwenden Cookies, um unsere Website bereitzustellen (notwendig), ihre Nutzung zu analysieren (Statistik) und Ihnen ggf. personalisierte Inhalte/Angebote anzuzeigen (Marketing). Sie können alle akzeptieren, nur notwendige zulassen oder Ihre Auswahl anpassen.
-            </p>
-            <a href="/datenschutzerklaerung.html" class="text-sm text-purple-600 dark:text-purple-400 hover:underline mt-1 inline-block">Mehr erfahren</a>
-          </div>
-          <div class="flex flex-wrap gap-2 md:flex-nowrap">
-            <button onclick="acceptAllCookies()" class="cookie-btn cookie-btn-primary mr-2">Alle akzeptieren</button>
-            <button onclick="acceptNecessaryCookies()" class="cookie-btn cookie-btn-secondary mr-2">Nur notwendige</button>
-            <button onclick="showCookieSettings()" class="cookie-btn cookie-btn-secondary">Anpassen</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
 
-    <!-- Cookie Banner Script -->
-    <script>
-      // Check if user has made a choice
-      function getCookieConsent() {
-        return localStorage.getItem('cookieConsent');
-      }
+    <!-- Klaro cookie consent: config then Klaro script -->
+    <script defer type="application/javascript" src="./klaro-config.js"></script>
+    <script defer data-config="klaroConfig" type="application/javascript" src="https://cdn.kiprotect.com/klaro/v0.7/klaro.js"></script>
 
-      function setCookieConsent(value) {
-        localStorage.setItem('cookieConsent', value);
-        localStorage.setItem('cookieConsentDate', new Date().toISOString());
-      }
-
-      function showCookieBanner() {
-        document.getElementById('cookieBanner').classList.add('show');
-      }
-
-      function hideCookieBanner() {
-        document.getElementById('cookieBanner').classList.remove('show');
-      }
-
-      function acceptAllCookies() {
-        setCookieConsent('all');
-        hideCookieBanner();
-        loadAnalytics();
-        console.log('All cookies accepted');
-      }
-
-      function acceptNecessaryCookies() {
-        setCookieConsent('necessary');
-        hideCookieBanner();
-        console.log('Only necessary cookies accepted');
-      }
-
-      function showCookieSettings() {
-        // For now, just link to privacy policy
-        // You can implement a modal with checkboxes for each category later
-        alert('Cookie-Einstellungen:\n\n✓ Notwendig (immer aktiv)\n☐ Statistik\n☐ Marketing\n\nFür detaillierte Einstellungen besuchen Sie bitte unsere Datenschutzerklärung.');
-        acceptNecessaryCookies();
-      }
-
-      function loadAnalytics() {
-        // Load analytics only if consent is given
-        const consent = getCookieConsent();
-        if (consent === 'all') {
-          // Initialize Firebase Analytics (already in page)
-          console.log('Analytics enabled');
-          // Your analytics code is already loaded via the module script below
-        }
-      }
-
-      // Check on page load
-      window.addEventListener('DOMContentLoaded', function() {
-        const consent = getCookieConsent();
-        if (!consent) {
-          // No consent yet, show banner
-          showCookieBanner();
-        } else if (consent === 'all') {
-          // User accepted all, load analytics
-          loadAnalytics();
-        }
-      });
-
-      // Function to reset cookie consent (for testing)
-      function resetCookieConsent() {
-        localStorage.removeItem('cookieConsent');
-        localStorage.removeItem('cookieConsentDate');
-        location.reload();
-      }
-    </script>
-
-    <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
+    <!-- Firebase Analytics (loaded only with consent via Klaro) -->
+    <script type="text/plain" data-type="application/javascript" data-name="firebase-analytics" data-src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script type="text/plain" data-type="application/javascript" data-name="firebase-analytics" data-src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics-compat.js"></script>
+    <script type="text/plain" data-type="application/javascript" data-name="firebase-analytics">
+(function(){
+  var firebaseConfig = {
     apiKey: "AIzaSyCx6gf3BeWgK5TTj-3eCZZZZVzfiTt-Tzo",
     authDomain: "eitan-meir.firebaseapp.com",
     projectId: "eitan-meir",
@@ -1563,10 +1421,16 @@ Wir entwickeln modulare Lern-Tools, erstellen ansprechende Inhalte und bauen Tec
     appId: "1:366030690310:web:09d7fc5cec2d5c27f4cb87",
     measurementId: "G-9PQSL2CQYR"
   };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+  function init() {
+    if (typeof firebase !== 'undefined' && firebase.app) {
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    } else {
+      setTimeout(init, 50);
+    }
+  }
+  init();
+})();
+    </script>
 </body>
 </html>

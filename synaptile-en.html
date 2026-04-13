@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="canonical" href="https://eitan-meir.de/synaptile-en.html" />
+  <link rel="alternate" hreflang="de" href="https://eitan-meir.de/synaptile.html" />
+  <link rel="alternate" hreflang="en" href="https://eitan-meir.de/synaptile-en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://eitan-meir.de/synaptile.html" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SynapTile™ — Physical AI Learning Kit | Build Neural Networks by Hand — Eitan & Meir</title>
+
+  <meta name="title" content="SynapTile™ — Physical AI Learning Kit | Build Neural Networks by Hand — Eitan & Meir" />
+  <meta name="description" content="SynapTile™ is a modular hardware learning system made of perceptron-like electronic tiles. Build and understand physical neural networks. For schools, universities and workshops." />
+  <meta name="keywords" content="SynapTile, AI learning kit, Machine Learning Starter Kit, perceptron, neural networks, AI education, STEM tools, EdTech, physical neural network, Eitan Meir, Berlin" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="language" content="en" />
+  <meta name="author" content="Eitan & Meir GmbH" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="geo.region" content="DE-BE" />
+  <meta name="geo.placename" content="Berlin" />
+
+  <meta property="og:title" content="SynapTile™ — Build Neural Networks by Hand | Eitan & Meir" />
+  <meta property="og:site_name" content="Eitan & Meir" />
+  <meta property="og:url" content="https://eitan-meir.de/synaptile-en.html" />
+  <meta property="og:description" content="SynapTile is a modular hardware learning system that lets people physically build and understand simple neural networks using perceptron-like electronic tiles." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://eitan-meir.de/images/snaptile.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SynapTile™ — Build Neural Networks by Hand | Eitan & Meir" />
+  <meta name="twitter:description" content="Modular hardware learning system made of perceptron-like electronic tiles. See signals, connect decision units, understand AI." />
+  <meta name="twitter:image" content="https://eitan-meir.de/images/snaptile.png" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#6d28d9" />
+  <meta name="theme-color" content="#6d28d9" />
+
+  <link href="./output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+    .lang-switcher {
+      display: inline-flex;
+      align-items: center;
+      margin-right: 1rem;
+      padding: 0.375rem 0.75rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #374151;
+      background: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+    }
+    .lang-switcher:hover {
+      border-color: #c4b5fd;
+      background: #f5f3ff;
+      color: #6d28d9;
+    }
+    .dark .lang-switcher {
+      color: #d1d5db;
+      background: #374151;
+      border-color: #4b5563;
+    }
+    .dark .lang-switcher:hover {
+      border-color: #7c3aed;
+      background: rgba(109, 40, 217, 0.2);
+      color: #c4b5fd;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "SynapTile™",
+      "image": "https://eitan-meir.de/images/snaptile.png",
+      "description": "Modular hardware learning system made of perceptron-like electronic tiles. Build and understand physical neural networks.",
+      "brand": { "@type": "Brand", "name": "Eitan & Meir" },
+      "category": "AI Machine Learning Starter Kit",
+      "url": "https://eitan-meir.de/synaptile-en.html",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "EUR",
+        "priceValidUntil": "2026-12-31",
+        "availability": "https://schema.org/PreOrder",
+        "description": "Coming soon, currently in development."
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://eitan-meir.de/index-en.html" },
+        { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://eitan-meir.de/index-en.html#products" },
+        { "@type": "ListItem", "position": 3, "name": "SynapTile™", "item": "https://eitan-meir.de/synaptile-en.html" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is SynapTile™?",
+          "acceptedAnswer": { "@type": "Answer", "text": "SynapTile is a modular hardware learning system made of perceptron-like electronic tiles. It lets people physically build and understand simple neural networks without code or abstract math." }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is SynapTile for?",
+          "acceptedAnswer": { "@type": "Answer", "text": "SynapTile is designed for students, teachers, university lecturers, parents, makers, and anyone who wants to understand AI fundamentals. From beginner to advanced." }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a SynapTile tile work?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Each tile receives multiple input signals (excitatory and inhibitory), combines them, reacts with threshold-like behavior, and produces an output that can feed into the next tile." }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes SynapTile different from a normal electronics kit?",
+          "acceptedAnswer": { "@type": "Answer", "text": "SynapTile teaches not just circuits, but also decision logic, signal integration, inhibition, layered behavior, and networked intelligence — concepts from AI and neuroscience." }
+        },
+        {
+          "@type": "Question",
+          "name": "When will SynapTile be available?",
+          "acceptedAnswer": { "@type": "Answer", "text": "SynapTile is currently in development. Contact us to be notified at launch." }
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+
+<body>
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-purple-700 focus:text-white">Skip to main content</a>
+    <header class="fixed w-full" style="z-index: 10000;" role="banner">
+        <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900" style="position: relative; z-index: 10000;">
+            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+                <a href="index-en.html" class="flex items-center">
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">eitan & meir</span>
+                </a>
+                <div class="flex items-center gap-3 lg:order-2">
+                    <a href="synaptile.html" class="lang-switcher" hreflang="de" lang="de" title="Deutsch">DE</a>
+                    <a href="https://circubes.com" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Shop</a>
+                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="index-en.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                        </li>
+                        <li>
+                            <a href="index-en.html#education" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Education</a>
+                        </li>
+                        <li>
+                            <a href="index-en.html#products" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Products</a>
+                        </li>
+                        <li>
+                            <a href="https://circubes.com" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Circubes®</a>
+                        </li>
+                        <li>
+                            <a href="synaptile-en.html" class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white" aria-current="page">SynapTile™</a>
+                        </li>
+                        <li>
+                            <a href="careers.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Careers</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@eitan-meir.de" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+
+    <!-- Hero -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <p class="mb-4 text-sm font-semibold tracking-wide text-purple-600 uppercase dark:text-purple-400">Coming Soon</p>
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">Build neural networks by hand.</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">SynapTile™ is a modular hardware learning system made of perceptron-like electronic tiles. See signals, connect decision units, understand how AI works.</p>
+                <p class="max-w-2xl mb-8 font-light text-gray-500 md:text-lg lg:text-xl dark:text-gray-400">Instead of learning neural networks only through code, diagrams, or abstract math, SynapTile makes them <strong>visible, touchable, and intuitive</strong>.</p>
+                <a href="mailto:info@eitan-meir.de?subject=SynapTile%20Newsletter" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white bg-purple-700 rounded-lg hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-900">
+                    Get notified at launch
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="./images/snaptile.png" alt="SynapTile™ — modular perceptron tiles for building physical neural networks" loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <!-- What is SynapTile -->
+    <section class="bg-gray-50 dark:bg-gray-800">
+        <div class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-24 lg:px-6">
+            <div class="col-span-2 mb-8">
+                <p class="text-lg font-medium text-purple-600 dark:text-purple-500">The concept</p>
+                <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl dark:text-white">What is SynapTile™?</h2>
+                <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">SynapTile is a hands-on educational hardware system that lets people <strong>build and understand simple neural networks physically</strong>, using modular electronic tiles.</p>
+                <p class="mt-4 font-light text-gray-500 sm:text-xl dark:text-gray-400">At its core, SynapTile turns the idea of a <strong>perceptron</strong> into a physical object. Each tile represents one simple decision-making unit: it receives several inputs, combines them, applies a threshold-like behavior, and produces an output.</p>
+                <p class="mt-4 font-light text-gray-500 sm:text-xl dark:text-gray-400">When multiple tiles are connected together, they can form a larger network that behaves more like a real neural system.</p>
+            </div>
+            <div class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
+                <div>
+                    <svg class="w-10 h-10 mb-2 text-purple-600 md:w-12 md:h-12 dark:text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                    <h3 class="mb-2 text-2xl font-bold dark:text-white">Visible</h3>
+                    <p class="font-light text-gray-500 dark:text-gray-400">See signals and activations instead of guessing at invisible computations.</p>
+                </div>
+                <div>
+                    <svg class="w-10 h-10 mb-2 text-purple-600 md:w-12 md:h-12 dark:text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clip-rule="evenodd"></path></svg>
+                    <h3 class="mb-2 text-2xl font-bold dark:text-white">Touchable</h3>
+                    <p class="font-light text-gray-500 dark:text-gray-400">Hold tiles in your hands, connect them, and build networks physically.</p>
+                </div>
+                <div>
+                    <svg class="w-10 h-10 mb-2 text-purple-600 md:w-12 md:h-12 dark:text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z"></path></svg>
+                    <h3 class="mb-2 text-2xl font-bold dark:text-white">Modular</h3>
+                    <p class="font-light text-gray-500 dark:text-gray-400">Scale from a single tile to a complex network of decisions.</p>
+                </div>
+                <div>
+                    <svg class="w-10 h-10 mb-2 text-purple-600 md:w-12 md:h-12 dark:text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
+                    <h3 class="mb-2 text-2xl font-bold dark:text-white">Intuitive</h3>
+                    <p class="font-light text-gray-500 dark:text-gray-400">Understand without code, without matrix operations, without software frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How a tile works -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+            <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+                <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+                    <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">How a tile works</h2>
+                    <p class="mb-8 font-light lg:text-xl">Each SynapTile tile behaves like a simplified neuron or perceptron. It receives signals, processes them, and decides whether to activate.</p>
+
+                    <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
+                        <li class="flex space-x-3">
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">3 excitatory inputs — signals that push the tile toward activation</span>
+                        </li>
+                        <li class="flex space-x-3">
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">1 inhibitory input — a signal that suppresses or blocks activation</span>
+                        </li>
+                        <li class="flex space-x-3">
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Threshold behavior — reacts only when enough signal is present</span>
+                        </li>
+                        <li class="flex space-x-3">
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">1 output — feeds the result to the next tile in the chain</span>
+                        </li>
+                        <li class="flex space-x-3">
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Visual feedback — LEDs or light show the signal flow</span>
+                        </li>
+                    </ul>
+
+                    <p class="font-light lg:text-xl">What makes it special: SynapTile uses <strong>light as part of the decision-making mechanism</strong>. Learners can literally see when a signal becomes strong, when a node activates, and how signals propagate through a chain.</p>
+                </div>
+                <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./images/snaptile.png" alt="SynapTile tile with excitatory and inhibitory inputs" loading="lazy">
+            </div>
+
+            <!-- Row 2 — Excitation vs. Inhibition -->
+            <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+                <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./images/snaptile.png" alt="Excitation and inhibition — how SynapTile tiles make decisions" loading="lazy">
+                <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+                    <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Excitation and inhibition</h2>
+                    <p class="mb-8 font-light lg:text-xl">Intelligent behavior is not only about adding signals. It is also about <strong>blocking, gating, and suppressing</strong> them.</p>
+
+                    <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
+                        <li class="flex space-x-3">
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Excitatory signals increase the probability of activation</span>
+                        </li>
+                        <li class="flex space-x-3">
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Inhibitory signals suppress the output — even when excitation is present</span>
+                        </li>
+                        <li class="flex space-x-3">
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Demonstrates competition, prevention, conditional activation, and control logic</span>
+                        </li>
+                    </ul>
+
+                    <p class="font-light lg:text-xl">This teaches a crucial principle of neuroscience and AI: intelligence emerges from the interplay of excitation and inhibition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What makes SynapTile different -->
+    <section class="bg-gray-50 dark:bg-gray-800">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="mb-8 max-w-screen-md lg:mb-16">
+                <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">What makes SynapTile different</h2>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">SynapTile is neither a normal electronics kit nor a coding-only AI tool. It connects electronics, AI concepts, and neuroscience in one physical learning system.</p>
+            </div>
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                <div>
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-purple-100 dark:bg-purple-900 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-purple-600 dark:text-purple-300 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Not just circuits</h3>
+                    <p class="text-gray-500 dark:text-gray-400">SynapTile teaches decision logic, signal integration, inhibition, layered behavior, and networked intelligence — concepts that go beyond basic electronics.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-purple-100 dark:bg-purple-900 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-purple-600 dark:text-purple-300 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">No code required</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Understand AI concepts without needing to learn programming first. SynapTile makes the entry point physical, not digital.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-purple-100 dark:bg-purple-900 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-purple-600 dark:text-purple-300 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Closer to neurons than logic gates</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Instead of strict AND/OR/NOT rules, SynapTile shows accumulation, partial influence, activation thresholds, and emergent network behavior.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-purple-100 dark:bg-purple-900 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-purple-600 dark:text-purple-300 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path></svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Light as a signal carrier</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Light makes invisible electronic activity visible. Immediate feedback, biological feeling, clear visualization.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-purple-100 dark:bg-purple-900 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-purple-600 dark:text-purple-300 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Bridge to software</h3>
+                    <p class="text-gray-500 dark:text-gray-400">SynapTile does not replace software learning. It makes later software-based AI learning easier because the core concepts are already understood.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-purple-100 dark:bg-purple-900 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-purple-600 dark:text-purple-300 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">The "aha" moment</h3>
+                    <p class="text-gray-500 dark:text-gray-400">People can actually build a neural network with their hands and watch it make a decision. That is easy to show and memorable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Network building -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">From one tile to a network</h2>
+                <p class="mb-4">A single tile shows the basic principle. The real power of SynapTile appears when multiple tiles are connected together.</p>
+                <p class="mb-4">A layered decision system can emerge:</p>
+                <ul role="list" class="pt-4 space-y-3 mb-4">
+                    <li class="flex space-x-3">
+                        <span class="text-purple-500 font-bold">1.</span>
+                        <span>First layer detects simple conditions (light, touch, safety)</span>
+                    </li>
+                    <li class="flex space-x-3">
+                        <span class="text-purple-500 font-bold">2.</span>
+                        <span>Second layer combines those conditions</span>
+                    </li>
+                    <li class="flex space-x-3">
+                        <span class="text-purple-500 font-bold">3.</span>
+                        <span>Final tile represents the overall decision</span>
+                    </li>
+                    <li class="flex space-x-3">
+                        <span class="text-purple-500 font-bold">4.</span>
+                        <span>An inhibitory tile blocks the result if a danger condition exists</span>
+                    </li>
+                </ul>
+                <p class="mb-4 font-medium">The result: "Activate only if several good conditions are true, unless a blocking condition is present."</p>
+                <p>That is already very close to real decision logic found in both biology and AI.</p>
+            </div>
+            <img class="hidden w-full rounded-lg lg:flex" src="./images/snaptile.png" alt="Multiple SynapTile tiles connected into a neural network" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Educational value -->
+    <section class="bg-gray-50 dark:bg-gray-800">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="mb-8 max-w-screen-md lg:mb-16">
+                <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">What SynapTile teaches</h2>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">SynapTile supports multiple learning goals at the same time. Electronics, computational thinking, and AI literacy in one system.</p>
+            </div>
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
+                <div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Electronics</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Basic circuit connections, input and output behavior, polarity, practical prototyping, and modular hardware design.</p>
+                </div>
+                <div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Computational thinking</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Decision structures, signal flow, system behavior, network composition, and abstraction.</p>
+                </div>
+                <div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">AI literacy</h3>
+                    <p class="text-gray-500 dark:text-gray-400">What a perceptron is, how simple units combine into networks, why inhibition matters, and how complex behavior can emerge from simple modules.</p>
+                </div>
+                <div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Scientific thinking</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Form and test hypotheses: "What happens if I add one more signal? What if I block the output? What if I connect a second layer?"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use cases -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="mb-8 max-w-screen-md lg:mb-16">
+                <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">Example use cases</h2>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">From a single tile to a full network. Practical scenarios that SynapTile enables in the classroom and beyond.</p>
+            </div>
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                <div>
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-purple-100 dark:bg-purple-900 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-purple-600 dark:text-purple-300 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Learn a single perceptron</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Connect a few inputs to one tile and observe when it activates. Understand the basic idea of thresholded decision-making.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-purple-100 dark:bg-purple-900 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-purple-600 dark:text-purple-300 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Compare excitation and inhibition</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Activate excitatory inputs and then apply an inhibitory signal. Learn that some signals encourage action while others prevent it.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-purple-100 dark:bg-purple-900 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-purple-600 dark:text-purple-300 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z"></path></svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Build a simple classifier</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Build a small multi-tile network that activates only when a certain combination of conditions is present. Introduce classification behavior.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-purple-100 dark:bg-purple-900 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-purple-600 dark:text-purple-300 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838l-3.14 1.346 2.14.918a1 1 0 00.788 0l7-3a1 1 0 000-1.84l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"></path></svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Demonstrate layered intelligence</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Build a multi-stage network where outputs from earlier tiles feed later tiles. Show how simple local decisions combine into larger behavior.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-purple-100 dark:bg-purple-900 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-purple-600 dark:text-purple-300 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V15a1 1 0 11-2 0V4.804z"></path></svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Classroom & workshops</h3>
+                    <p class="text-gray-500 dark:text-gray-400">STEM and computer science lessons, maker events, teacher training. Make AI tangible for any audience and any age.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-purple-100 dark:bg-purple-900 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-purple-600 dark:text-purple-300 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm3 2h6v4H7V5zm8 8v2h1v-2h-1zm-2-2H7v4h6v-4zm2 0h1V9h-1v2zm1-4V5h-1v2h1zM5 5v2H4V5h1zm-1 4h1v2H4V9zm1 4H4v2h1v-2z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Demos & videos</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Visual and modular — perfect for YouTube demos, lecture demonstrations, and exhibition tables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audiences -->
+    <section class="bg-gray-50 dark:bg-gray-800">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="mb-8 max-w-screen-md lg:mb-16">
+                <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">Who is SynapTile for?</h2>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">SynapTile appeals to multiple groups — anywhere AI needs to be understood.</p>
+            </div>
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                <div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Students</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Explore beginner electronics, neural network basics, and hands-on STEM learning.</p>
+                </div>
+                <div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Teachers & schools</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Demonstrate difficult concepts physically. Fits STEM, electronics, computer science, AI introduction, and maker education courses.</p>
+                </div>
+                <div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Universities</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Complement introductory machine learning courses with a physical component that deepens understanding.</p>
+                </div>
+                <div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Parents</h3>
+                    <p class="text-gray-500 dark:text-gray-400">A meaningful, visual learning tool beyond passive screen time. Explore intelligence and circuits physically.</p>
+                </div>
+                <div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Makers & hobbyists</h3>
+                    <p class="text-gray-500 dark:text-gray-400">For anyone who enjoys modular systems, experimentation, and unusual educational tools.</p>
+                </div>
+                <div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Museums & science events</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Visual and interactive — a physical neural network people can gather around and immediately ask questions about.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analogy -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
+            <div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+                <h2 class="mb-4 text-4xl font-bold text-gray-900 dark:text-white">A simple analogy</h2>
+                <p class="mb-4 font-light">Imagine a tiny organism deciding whether to move toward food.</p>
+                <p class="mb-4 font-light">It receives several signals: "there is light," "there is warmth," "there is food smell" — but also "there is danger."</p>
+                <p class="mb-4 font-light">If enough positive signals are present, the organism acts. If the danger signal is strong, the action is blocked.</p>
+                <p class="mb-4 font-medium">That is exactly the kind of behavior SynapTile can demonstrate.</p>
+                <p class="font-light">Each tile becomes a tiny decision unit in that creature's nervous system. When several tiles are connected together, the learner can build a physical model of how simple intelligence can emerge from many small decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-screen-xl px-4 pb-8 pt-8 mx-auto lg:pb-24 lg:pt-16 lg:px-6">
+            <h2 class="mb-6 text-3xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-8 lg:text-3xl dark:text-white">Frequently asked questions</h2>
+            <div class="max-w-screen-md mx-auto">
+                <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+
+                    <h3 id="accordion-flush-heading-1">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900 bg-gray-50 border-b border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                            <span>What is SynapTile™?</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-1" aria-labelledby="accordion-flush-heading-1">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">SynapTile is a modular hardware learning system made of perceptron-like electronic tiles. It lets people physically build and understand simple neural networks — without code, without abstract math.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Each tile receives signals, combines them, reacts with threshold-like behavior, and produces an output that can feed into the next tile.</p>
+                        </div>
+                    </div>
+
+                    <h3 id="accordion-flush-heading-2">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                            <span>How does a SynapTile tile work?</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Each tile has 3 excitatory inputs (which push it toward activation), 1 inhibitory input (which suppresses activation), and 1 output. When the combined signal crosses a threshold, the tile activates.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Light makes the signal flow visible — learners can literally see when and why a tile "fires."</p>
+                        </div>
+                    </div>
+
+                    <h3 id="accordion-flush-heading-3">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                            <span>What makes SynapTile different from a normal electronics kit?</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">A normal electronics kit teaches how circuits connect. SynapTile goes further: it teaches decision logic, signal integration, inhibition, layered behavior, and networked intelligence.</p>
+                            <p class="text-gray-500 dark:text-gray-400">It is also different from logic-gate toys: instead of strict AND/OR/NOT rules, SynapTile shows accumulation, partial influence, and emergent network behavior — closer to neural biology than digital logic.</p>
+                        </div>
+                    </div>
+
+                    <h3 id="accordion-flush-heading-4">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
+                            <span>Do I need prior knowledge of AI or programming?</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">No. SynapTile makes AI concepts physically learnable — without needing to understand vectors, matrix multiplication, training algorithms, or software frameworks first.</p>
+                            <p class="text-gray-500 dark:text-gray-400">SynapTile can become the bridge that makes later software-based AI learning easier.</p>
+                        </div>
+                    </div>
+
+                    <h3 id="accordion-flush-heading-5">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
+                            <span>When will SynapTile be available?</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">SynapTile is currently in development. We are working to make the product available for education and self-study.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Contact us at <a href="mailto:info@eitan-meir.de" class="text-purple-600 dark:text-purple-500 hover:underline">info@eitan-meir.de</a> to be notified at launch.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon CTA -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
+            <div class="max-w-screen-md mx-auto text-center">
+                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">SynapTile is in development</h2>
+                <p class="mb-6 font-light text-gray-500 sm:text-xl dark:text-gray-400">We are working to make SynapTile available for schools, universities, and self-learners. Get notified when it launches.</p>
+                <a href="mailto:info@eitan-meir.de?subject=SynapTile%20Newsletter" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-purple-700 rounded-lg hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-900">
+                    Get notified by email
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="bg-white dark:bg-gray-800" role="contentinfo">
+        <div class="max-w-screen-xl p-4 py-5 mx-auto lg:py-16 md:p-8 lg:p-10">
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h3>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4"><a href="index-en.html#about" class="hover:underline">About</a></li>
+                        <li class="mb-4"><a href="careers.html" class="hover:underline">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Products</h3>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4"><a href="https://circubes.com" class="hover:underline">Circubes®</a></li>
+                        <li class="mb-4"><a href="synaptile-en.html" class="hover:underline font-medium text-gray-900 dark:text-white">SynapTile™</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help</h3>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4"><a href="mailto:info@eitan-meir.de" class="hover:underline">Email</a></li>
+                        <li class="mb-4"><a href="tel:+491525289390" class="hover:underline">Phone</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-5 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h3>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4"><a href="privacy-policy.html" class="hover:underline">Privacy Policy</a></li>
+                        <li class="mb-4"><a href="terms.html" class="hover:underline">Terms</a></li>
+                        <li class="mb-4"><a href="licensing.html" class="hover:underline">Licensing</a></li>
+                        <li class="mb-4"><a href="#" onclick="if(window.klaro){klaro.getManager().showSettings();} return false;" class="hover:underline">Cookie Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+            <div class="text-center">
+                <a href="index-en.html" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">eitan & meir</a>
+                <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© 2025 Eitan & Meir GmbH. All Rights Reserved.</span>
+                <ul class="flex justify-center mt-5 space-x-5">
+                    <li><a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script defer type="application/javascript" src="./klaro-config.js"></script>
+    <script defer data-config="klaroConfig" type="application/javascript" src="https://cdn.kiprotect.com/klaro/v0.7/klaro.js"></script>
+    <script type="text/plain" data-type="application/javascript" data-name="firebase-analytics" data-src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script type="text/plain" data-type="application/javascript" data-name="firebase-analytics" data-src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics-compat.js"></script>
+    <script type="text/plain" data-type="application/javascript" data-name="firebase-analytics">
+(function(){var firebaseConfig={apiKey:"AIzaSyCx6gf3BeWgK5TTj-3eCZZZZVzfiTt-Tzo",authDomain:"eitan-meir.firebaseapp.com",projectId:"eitan-meir",storageBucket:"eitan-meir.firebasestorage.app",messagingSenderId:"366030690310",appId:"1:366030690310:web:09d7fc5cec2d5c27f4cb87",measurementId:"G-9PQSL2CQYR"};function init(){if(typeof firebase!=="undefined"&&firebase.app){firebase.initializeApp(firebaseConfig);firebase.analytics();}else{setTimeout(init,50);}}init();})();
+    </script>
+</body>
+</html>

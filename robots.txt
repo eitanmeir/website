@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /Impressum.html
 Allow: /
 
 Sitemap: https://eitan-meir.de/sitemap.xml
